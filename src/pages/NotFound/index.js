@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {useNavigate} from "react-router-dom";
 import record from "../../images/record";
 import recordArm from "../../images/record-arm.svg";
@@ -6,6 +7,10 @@ import styles from "./styles.module.scss";
 function NotFound(){
 
     const navigate = useNavigate();
+
+    useEffect(()=>{
+        document.title="404 not found"
+    })
 
     return (
         <div className={styles.container}>

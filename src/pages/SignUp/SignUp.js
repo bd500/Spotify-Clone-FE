@@ -7,7 +7,7 @@ import RadioInput from "../../components/Inputs/Radio/Radio";
 import CheckboxInput from "../../components/Inputs/Checkbox/CheckboxInput";
 import Button from "../../components/Button/Button";
 import styles from "./styles.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../images/black_logo.svg";
 
 const months = [
@@ -64,10 +64,16 @@ function SignUp(){
         }
     }
 
+    useEffect(() => {
+        document.title="Search";
+    },[]);
+    
     return (
         <div className={styles.container}>
             <div className={styles.logo}>
-                <img src={logo} alt="logo" />
+                <Link to="/">
+                    <img src={logo} alt="logo" />
+                </Link>
             </div>
         <h1 className={styles.heading}>Sign up for free to start listening.</h1>
         <p className={styles.login}>

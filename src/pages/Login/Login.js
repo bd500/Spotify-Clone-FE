@@ -8,7 +8,7 @@ import AppleIcon from "@mui/icons-material/Apple";
 import GoogleIcon from "@mui/icons-material/Google";
 import logo from "../../images/black_logo.svg";
 import styles from "./styles.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Login(){
     const [data, setData] = useState({email: "", password: ""});
@@ -35,6 +35,10 @@ function Login(){
             console.log("Please fill out properly");
         }
     }
+
+    useEffect(()=>{
+        document.title="Login";
+    },[]);
 
     return (
         <div className={styles.container}>
