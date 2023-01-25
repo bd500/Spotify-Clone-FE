@@ -21,7 +21,7 @@ function Library(){
         <div className={styles.container}>
             <h1>Playlists</h1>
             <div className={styles.playlist_container}>
-                <Link to="/collection/tracks" >
+                <Link to="/collections/library" >
                     <div className={styles.liked_songs}>
                         <h1>Liked Songs</h1>
                         <p>1 Liked Songs</p>

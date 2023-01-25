@@ -1,6 +1,6 @@
 .container{
     height: 6rem;
-    width: calc(100% -28rem);
+    width: calc(100% - 28rem);
     background: linear-gradient(149.46deg, #450af5, #8e8ee5 99.16%);
     position: fixed;
     top: 0;
@@ -66,19 +66,29 @@
         background-color: var(--light-black);
         z-index: 100;
 
-        p{
-            margin: 0;
-            font-size: 1.2rem;
-            font-weight: 500;
-        }
+        .options{
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
 
-        svg{
-            width: 1.6rem;
-            height: 1.6rem;
-        }
-
-        &:hover{
-            background-color: var(--light-white);
+            p{
+                margin: 0;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+    
+            svg{
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+    
+            &:hover{
+                background-color: var(--light-white);
+            }
         }
     }
 }

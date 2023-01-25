@@ -1,4 +1,4 @@
-import Like from "../Like";
+import Like from "../Like/Like";
 import IconButton from "@mui/material/IconButton";
 import blue from "../../images/blue.jpg";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";

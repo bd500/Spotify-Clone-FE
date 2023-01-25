@@ -16,29 +16,29 @@ function Sidebar(){
         <div className={styles.container}>
             <img src={logo} className={styles.logo} alt="logo" />
             <NavLink 
-                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu]} 
+                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu].join(" ")} 
                 to="/home" >
                 <HomeIcon />
                 <span>Home</span>
             </NavLink>
             <NavLink 
-                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu]} 
+                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu].join(" ")} 
                 to="/search" >
                 <SearchIcon />
                 <span>Search</span>
             </NavLink>
             <NavLink 
-                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu]} 
+                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu].join(" ")} 
                 to="/collection/playlists" >
                 <LibraryMusicIcon />
                 <span>Your Library</span>
             </NavLink>
-            <div className={styles.create_playlist_btn}>
+            <NavLink className={styles.create_playlist_btn} to="/playlists">
                 <AddIcon />
                 <span>Create your playlist</span>
-            </div>
+            </NavLink>
             <NavLink 
-                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu]} 
+                className={({isActive}) => !isActive ? styles.menu_link : [styles.menu_link, styles.active_menu].join(" ")} 
                 to="/collection/tracks" >
                 <img src={likeImg} alt="like" />
                 <span>Liked Songs</span>

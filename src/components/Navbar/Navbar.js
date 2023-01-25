@@ -16,7 +16,7 @@ function Navbar(){
     const navigate = useNavigate();
 
     return (
-        <div className={styles.contaienr}>
+        <div className={styles.container}>
             <div className={styles.left}>
                 <div className={styles.icon} onClick={() => navigate(-1)}>
                     <ArrowBackIsoRoundedIcon />

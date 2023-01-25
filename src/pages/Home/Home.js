@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Playlist from "../../components/Playlist/Playlist";
 import playlistImg from "../../images/music.png";
 import styles from "./styles.module.scss";
@@ -8,6 +8,11 @@ const playlists = [
 ];
 
 function Home(){
+
+    useEffect(()=>{
+        document.title="Spotify";
+    },[])
+
     return (
         <Fragment>
             <div className={styles.container}>

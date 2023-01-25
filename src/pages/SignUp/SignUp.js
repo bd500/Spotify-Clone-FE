@@ -1,5 +1,5 @@
 import Joi from "joi";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import passwordComplexity from "joi-password-complexity";
 import TextField from "../../components/Inputs/TextField/TextField";
 import Select from "../../components/Inputs/Select/Select";
@@ -27,7 +27,7 @@ const months = [
 
 const genders = ["male", "female"];
 
-function SignUp(){
+function SignUp({user}){
 
     const [data, setData] = useState({
         email: "",
@@ -65,8 +65,9 @@ function SignUp(){
     }
 
     useEffect(() => {
-        document.title="Search";
+        document.title="Sign Up";
     },[]);
+
     
     return (
         <div className={styles.container}>

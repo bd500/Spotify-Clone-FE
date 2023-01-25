@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import {useNavigate} from "react-router-dom";
-import record from "../../images/record";
+import record from "../../images/record.svg";
 import recordArm from "../../images/record-arm.svg";
 import styles from "./styles.module.scss";
 
